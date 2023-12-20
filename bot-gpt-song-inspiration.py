@@ -40,8 +40,8 @@ async def gather_key():
     key = random.choice(KEYS) + random.choice(SIGN)
     while key in NONKEYS:
         key = random.choice(KEYS) + random.choice(SIGN)
+    else:
         return key
-    return key
 
 
 async def gather_theme():
